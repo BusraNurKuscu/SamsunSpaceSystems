@@ -1,4 +1,6 @@
-﻿namespace SamsunSpaceSystems
+﻿using System.Windows.Forms;
+
+namespace SamsunSpaceSystems
 {
     partial class Form1
     {
@@ -566,6 +568,7 @@
             this.guna2Button1.ShadowDecoration.BorderRadius = 0;
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.UseTransparentBackground = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label5
             // 

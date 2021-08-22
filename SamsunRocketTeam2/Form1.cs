@@ -279,13 +279,17 @@ namespace SamsunSpaceSystems
         private void btnExit_Click(object sender, EventArgs e)
         {
             //programı kapatır
-            Application.Exit();
+            System.Environment.Exit(0); 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             
         
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
         }
     }
 }
