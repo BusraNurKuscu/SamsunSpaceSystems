@@ -14,21 +14,24 @@ namespace SamsunSpaceSystems
     {
         public Home()
         {
+            //  formdaki daki serial portu başka bir 
+            //Form1 h = new Form1();
+            //h.srlPortGelen.Write("dksjg");
             InitializeComponent();
-            try
-            {
-                if (srlPortGiden.IsOpen == false)
-                {
-                    srlPortGiden.Open();
-                    txtSbtPort2.Text = "Bağlandı";
-                }
-            }
-            catch
-            {
-                txtSbtPort2.Text = "Bağlanamadı";
-            }
+        //    try
+        //    {
+        //        if (srlPortGiden.IsOpen == false)
+        //        {
+        //            srlPortGiden.Open();
+        //            txtSbtPort2.Text = "Bağlandı";
+        //        }
+        //    }
+        //    catch
+        //    {
+        //        txtSbtPort2.Text = "Bağlanamadı";
+        //    }
         }
 
-        
+
     }
 }

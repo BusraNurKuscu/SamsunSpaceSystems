@@ -21,7 +21,7 @@ namespace SamsunSpaceSystems
         public Form1()
         {
             InitializeComponent();
-
+            //srlPortGelen.PortName = comboBox1.Text;
             try
             {
                 if (srlPortGelen.IsOpen == false)
@@ -38,6 +38,21 @@ namespace SamsunSpaceSystems
                 }
 
             }
+            //while (true)
+            //    try
+            //    {
+            //        if (srlPortGelen.IsOpen == false)
+            //        {
+            //            srlPortGelen.Open();
+            //            txtSbtPort.Text = "Bağlandı";
+            //            break;
+            //        }
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        txtSbtPort.Text = "Bağlanamadı";
+            //    }
+
         }
 
 
@@ -128,6 +143,7 @@ namespace SamsunSpaceSystems
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             new Thread(() =>
             {
                 while (true)
@@ -135,16 +151,32 @@ namespace SamsunSpaceSystems
                     try
                     {
                         string data = srlPortGelen.ReadLine();
-                        _data = data;
+                            _data = data;
+                        //if (srlPortGelen.IsOpen)
+                        //{
+                        //    string data = srlPortGelen.ReadLine();
+                        //    _data = data;
+                        //}
+                        //else
+                        //{
+                        //    srlPortGelen.Open();
+                        //}
                     }
-                    catch (Exception)
+                    catch (Exception ee)
                     {
-                        MessageBox.Show("Port okuma işlemi sonlandırıldı.");
+                        Console.WriteLine(ee);
+                      // MessageBox.Show("Port okuma işlemi sonlandırıldı.");
                     }
 
                 }
 
             }).Start();
+            //Array ports = System.IO.Ports.SerialPort.GetPortNames();
+            //if (ports.Length > 0)
+            //{
+            //    for (int x = 0; x <= ports.Length; comboBox1.Items.Add(ports.GetValue(x))) ;
+            //}
+            //timer1.Start();
             overview1.Visible = true;
             BtnOverview.BackColor = Color.Gold;
         }
@@ -190,17 +222,16 @@ namespace SamsunSpaceSystems
                     Inis_Hizi = float.Parse(pots[5]) / 100.0f,
                     Sicaklik = float.Parse(pots[6]) / 100.0f,
                     Pil_Gerilimi = float.Parse(pots[7]) / 100.0f,
-                    Pil_Gerilimi2 = float.Parse(pots[8]) / 100.0f,
-                    GPS_Lat = float.Parse(pots[9]) / 1000000.0f,
-                    GPS_Long = float.Parse(pots[10]) / 1000000.0f,
-                    GPS_Alt = float.Parse(pots[11]) / 100.0f,
-                    Uydu_Statusu = Convert.ToString(pots[12]),
-                    Pitch = float.Parse(pots[13]) / 100f,
-                    Roll = float.Parse(pots[14]) / 100.0f,
-                    Yaw = float.Parse(pots[15]) / 100f,
-                    Donus_Sayisi = float.Parse(pots[16]) / 100.0f,
-                    Video_Aktarım_Bilgisi = float.Parse(pots[17]) / 100.0f,
-                    Manyetik_Alan = float.Parse(pots[18]) / 100.0f,
+                    GPS_Lat = float.Parse(pots[8]) / 100.0f,// 1000000.0f,
+                    GPS_Long = float.Parse(pots[9]) / 100.0f,// 1000000.0f,
+                    GPS_Alt = float.Parse(pots[10]) / 100.0f,
+                    Uydu_Statusu = Convert.ToString(pots[11]),
+                    Pitch = float.Parse(pots[12]) / 100f,
+                    Roll = float.Parse(pots[13]) / 100.0f,
+                    Yaw = float.Parse(pots[14]) / 100f,
+                    Donus_Sayisi = float.Parse(pots[15]) / 100.0f,
+                    Video_Aktarım_Bilgisi = Convert.ToString(pots[16])
+                   // Manyetik_Alan = float.Parse(pots[18]) / 100.0f,
                 };
 
                 Database.Add(tele);
@@ -225,7 +256,7 @@ namespace SamsunSpaceSystems
                         Inis_Hizi = 0,
                         Sicaklik = 0,
                         Pil_Gerilimi = 0,
-                        Pil_Gerilimi2 = 0,
+                        //Pil_Gerilimi2 = 0,
                         GPS_Lat = 0,
                         GPS_Long = 0,
                         GPS_Alt = 0,
@@ -234,8 +265,8 @@ namespace SamsunSpaceSystems
                         Roll = 0,
                         Yaw = 0,
                         Donus_Sayisi = 0,
-                        Video_Aktarım_Bilgisi = 0,
-                        Manyetik_Alan = 0,
+                        Video_Aktarım_Bilgisi = "Evet",
+                      //  Manyetik_Alan = 0,
                     };
 
                     Database.Add(tele);
@@ -251,6 +282,10 @@ namespace SamsunSpaceSystems
             Application.Exit();
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        
+        }
     }
 }

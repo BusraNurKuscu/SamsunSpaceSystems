@@ -22,6 +22,9 @@ namespace SamsunSpaceSystems
             timer1.Start();
         }
 
+
+
+
         private void dataGridView1_DataSourceChanged(object sender, EventArgs e)
         {
 
@@ -32,9 +35,11 @@ namespace SamsunSpaceSystems
             if (Program.globalLiveData.Count == 0)
                 return;
 
+            dataGridView1.DataSource = Database.GetAll();
+
             //Labellar ve textlere son veri yazılır
             var length = Program.globalLiveData.Count - 1;
-            txtRPM.Text = Program.globalLiveData[length].Manyetik_Alan.ToString();
+          //  txtRPM.Text = Program.globalLiveData[length].Manyetik_Alan.ToString();
             txtGPS_Alt.Text = Program.globalLiveData[length].GPS_Alt.ToString();
             txtStatu.Text = Program.globalLiveData[length].Uydu_Statusu.ToString();
             txtBsn.Text = Program.globalLiveData[length].Basinc.ToString();
@@ -55,9 +60,7 @@ namespace SamsunSpaceSystems
             txtGPSlt.Text = Program.globalLiveData[length].GPS_Lat.ToString();
             txtGPS_Alt.Text = Program.globalLiveData[length].GPS_Alt.ToString();
 
-
             // dataGridView1.DataSource = Program.globalLiveData;
-            dataGridView1.DataSource = Program.globalLiveData = Database.GetAll();
 
             //var m = dataGridView1.GetType().GetMethod("OnDataSourceChanged", BindingFlags.NonPublic | BindingFlags.Instance);
             //m.Invoke(dataGridView1, new object[] { EventArgs.Empty });

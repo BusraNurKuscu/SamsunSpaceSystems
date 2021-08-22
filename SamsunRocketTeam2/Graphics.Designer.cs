@@ -88,18 +88,19 @@
             this.chtSck.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chtSck.Legends.Add(legend1);
-            this.chtSck.Location = new System.Drawing.Point(33, 58);
+            this.chtSck.Location = new System.Drawing.Point(86, 59);
             this.chtSck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chtSck.Name = "chtSck";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.Name = "Sıcaklık C";
+            series1.Name = "Tempature C";
             series1.YValuesPerPoint = 2;
             this.chtSck.Series.Add(series1);
-            this.chtSck.Size = new System.Drawing.Size(453, 242);
+            this.chtSck.Size = new System.Drawing.Size(565, 336);
             this.chtSck.TabIndex = 36;
             this.chtSck.Text = "chart6";
+            this.chtSck.Click += new System.EventHandler(this.chtSck_Click);
             // 
             // chtHiz
             // 
@@ -107,16 +108,16 @@
             this.chtHiz.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chtHiz.Legends.Add(legend2);
-            this.chtHiz.Location = new System.Drawing.Point(33, 350);
+            this.chtHiz.Location = new System.Drawing.Point(86, 471);
             this.chtHiz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chtHiz.Name = "chtHiz";
             this.chtHiz.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series2.Legend = "Legend1";
-            series2.Name = "İniş Hızı m/s";
+            series2.Name = "Speed m/s";
             this.chtHiz.Series.Add(series2);
-            this.chtHiz.Size = new System.Drawing.Size(453, 242);
+            this.chtHiz.Size = new System.Drawing.Size(565, 336);
             this.chtHiz.TabIndex = 37;
             this.chtHiz.Text = "chart4";
             // 
@@ -126,16 +127,16 @@
             this.chtBsn.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chtBsn.Legends.Add(legend3);
-            this.chtBsn.Location = new System.Drawing.Point(521, 58);
+            this.chtBsn.Location = new System.Drawing.Point(703, 59);
             this.chtBsn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chtBsn.Name = "chtBsn";
             this.chtBsn.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series3.Legend = "Legend1";
-            series3.Name = "Basınç hPa";
+            series3.Name = "Pressure hPa";
             this.chtBsn.Series.Add(series3);
-            this.chtBsn.Size = new System.Drawing.Size(453, 242);
+            this.chtBsn.Size = new System.Drawing.Size(558, 336);
             this.chtBsn.TabIndex = 38;
             this.chtBsn.Text = "chart5";
             // 
@@ -145,16 +146,16 @@
             this.chtPil.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.chtPil.Legends.Add(legend4);
-            this.chtPil.Location = new System.Drawing.Point(524, 350);
+            this.chtPil.Location = new System.Drawing.Point(703, 471);
             this.chtPil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chtPil.Name = "chtPil";
             this.chtPil.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series4.Legend = "Legend1";
-            series4.Name = "Pil Gerilimi V";
+            series4.Name = "Voltage V";
             this.chtPil.Series.Add(series4);
-            this.chtPil.Size = new System.Drawing.Size(453, 242);
+            this.chtPil.Size = new System.Drawing.Size(558, 336);
             this.chtPil.TabIndex = 39;
             this.chtPil.Text = "chart3";
             // 
@@ -164,16 +165,16 @@
             this.chtYks.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
             this.chtYks.Legends.Add(legend5);
-            this.chtYks.Location = new System.Drawing.Point(1009, 59);
+            this.chtYks.Location = new System.Drawing.Point(1313, 59);
             this.chtYks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chtYks.Name = "chtYks";
             this.chtYks.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
             series5.ChartArea = "ChartArea1";
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series5.Legend = "Legend1";
-            series5.Name = "Yükseklik m";
+            series5.Name = "Height m";
             this.chtYks.Series.Add(series5);
-            this.chtYks.Size = new System.Drawing.Size(453, 242);
+            this.chtYks.Size = new System.Drawing.Size(572, 336);
             this.chtYks.TabIndex = 40;
             this.chtYks.Text = "chart1";
             // 
@@ -183,7 +184,7 @@
             this.chtPtc.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
             this.chtPtc.Legends.Add(legend6);
-            this.chtPtc.Location = new System.Drawing.Point(33, 646);
+            this.chtPtc.Location = new System.Drawing.Point(86, 868);
             this.chtPtc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chtPtc.Name = "chtPtc";
             this.chtPtc.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -192,7 +193,7 @@
             series6.Legend = "Legend1";
             series6.Name = "Pitch";
             this.chtPtc.Series.Add(series6);
-            this.chtPtc.Size = new System.Drawing.Size(453, 245);
+            this.chtPtc.Size = new System.Drawing.Size(565, 336);
             this.chtPtc.TabIndex = 41;
             this.chtPtc.Text = "chart4";
             // 
@@ -202,16 +203,16 @@
             this.chtDns.ChartAreas.Add(chartArea7);
             legend7.Name = "Legend1";
             this.chtDns.Legends.Add(legend7);
-            this.chtDns.Location = new System.Drawing.Point(1008, 350);
+            this.chtDns.Location = new System.Drawing.Point(1312, 471);
             this.chtDns.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chtDns.Name = "chtDns";
             this.chtDns.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series7.ChartArea = "ChartArea1";
             series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series7.Legend = "Legend1";
-            series7.Name = "Dönüş Sayısı";
+            series7.Name = "Spin";
             this.chtDns.Series.Add(series7);
-            this.chtDns.Size = new System.Drawing.Size(454, 245);
+            this.chtDns.Size = new System.Drawing.Size(572, 336);
             this.chtDns.TabIndex = 42;
             this.chtDns.Text = "A";
             // 
@@ -221,7 +222,7 @@
             this.chtRoll.ChartAreas.Add(chartArea8);
             legend8.Name = "Legend1";
             this.chtRoll.Legends.Add(legend8);
-            this.chtRoll.Location = new System.Drawing.Point(521, 646);
+            this.chtRoll.Location = new System.Drawing.Point(1313, 868);
             this.chtRoll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chtRoll.Name = "chtRoll";
             this.chtRoll.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
@@ -230,7 +231,7 @@
             series8.Legend = "Legend1";
             series8.Name = "Roll";
             this.chtRoll.Series.Add(series8);
-            this.chtRoll.Size = new System.Drawing.Size(453, 245);
+            this.chtRoll.Size = new System.Drawing.Size(572, 336);
             this.chtRoll.TabIndex = 43;
             this.chtRoll.Text = "chart2";
             // 
@@ -240,7 +241,7 @@
             this.chtYaw.ChartAreas.Add(chartArea9);
             legend9.Name = "Legend1";
             this.chtYaw.Legends.Add(legend9);
-            this.chtYaw.Location = new System.Drawing.Point(1009, 646);
+            this.chtYaw.Location = new System.Drawing.Point(703, 868);
             this.chtYaw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chtYaw.Name = "chtYaw";
             this.chtYaw.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
@@ -249,7 +250,7 @@
             series9.Legend = "Legend1";
             series9.Name = "Yaw";
             this.chtYaw.Series.Add(series9);
-            this.chtYaw.Size = new System.Drawing.Size(453, 245);
+            this.chtYaw.Size = new System.Drawing.Size(558, 336);
             this.chtYaw.TabIndex = 44;
             this.chtYaw.Text = "chart6";
             // 
@@ -270,7 +271,7 @@
             this.Controls.Add(this.chtSck);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Graphics";
-            this.Size = new System.Drawing.Size(1616, 1008);
+            this.Size = new System.Drawing.Size(2639, 1605);
             this.Load += new System.EventHandler(this.Graphics_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chtSck)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chtHiz)).EndInit();

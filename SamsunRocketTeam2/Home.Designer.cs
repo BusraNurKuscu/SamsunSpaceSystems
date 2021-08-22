@@ -52,12 +52,15 @@
             this.ıconPictureBox11 = new FontAwesome.Sharp.IconPictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtSbtPort2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ıconPictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CirclePictureBox1
@@ -65,12 +68,12 @@
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(633, 636);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(790, 774);
             this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(313, 300);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(406, 377);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 47;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -85,14 +88,14 @@
             this.groupBox3.Controls.Add(this.btnVdGnd);
             this.groupBox3.Controls.Add(this.txtVDGnd);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox3.Location = new System.Drawing.Point(920, 159);
+            this.groupBox3.Location = new System.Drawing.Point(1371, 169);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(472, 459);
+            this.groupBox3.Size = new System.Drawing.Size(463, 467);
             this.groupBox3.TabIndex = 46;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "VideoGönderme";
+            this.groupBox3.Text = "Sending Video";
             // 
             // rhcVdGnd
             // 
@@ -111,7 +114,7 @@
             this.btnVdSec.Name = "btnVdSec";
             this.btnVdSec.Size = new System.Drawing.Size(186, 52);
             this.btnVdSec.TabIndex = 6;
-            this.btnVdSec.Text = "Video Seç";
+            this.btnVdSec.Text = "Sellect Video";
             this.btnVdSec.UseVisualStyleBackColor = false;
             // 
             // txtVdKytKnt
@@ -138,7 +141,7 @@
             this.btnVdGnd.Name = "btnVdGnd";
             this.btnVdGnd.Size = new System.Drawing.Size(187, 53);
             this.btnVdGnd.TabIndex = 2;
-            this.btnVdGnd.Text = "Gönder";
+            this.btnVdGnd.Text = "Send";
             this.btnVdGnd.UseVisualStyleBackColor = false;
             // 
             // txtVDGnd
@@ -148,7 +151,7 @@
             this.txtVDGnd.Name = "txtVDGnd";
             this.txtVDGnd.Size = new System.Drawing.Size(436, 22);
             this.txtVDGnd.TabIndex = 0;
-            this.txtVDGnd.Text = "Göndermek istediğiniz videoyu giriniz.";
+            this.txtVDGnd.Text = "Select the video you want to send";
             // 
             // groupBox8
             // 
@@ -157,14 +160,14 @@
             this.groupBox8.Controls.Add(this.button2);
             this.groupBox8.Controls.Add(this.textBox5);
             this.groupBox8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox8.Location = new System.Drawing.Point(221, 461);
+            this.groupBox8.Location = new System.Drawing.Point(173, 471);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox8.Size = new System.Drawing.Size(453, 157);
             this.groupBox8.TabIndex = 45;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Manual Tahrik Butonu";
+            this.groupBox8.Text = "Manual Drive Button";
             // 
             // button1
             // 
@@ -195,7 +198,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(356, 22);
             this.textBox5.TabIndex = 0;
-            this.textBox5.Text = "Motoru manuel olarak çalıştırın.";
+            this.textBox5.Text = "Manually start the engine.\r\n";
             // 
             // groupBox5
             // 
@@ -203,25 +206,25 @@
             this.groupBox5.Controls.Add(this.button4);
             this.groupBox5.Controls.Add(this.textBox2);
             this.groupBox5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox5.Location = new System.Drawing.Point(221, 290);
+            this.groupBox5.Location = new System.Drawing.Point(173, 300);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox5.Size = new System.Drawing.Size(453, 133);
             this.groupBox5.TabIndex = 44;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Manuel Ayrılma";
+            this.groupBox5.Text = "Manual Separation";
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.SlateBlue;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(232, 72);
+            this.button4.Location = new System.Drawing.Point(129, 76);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(156, 39);
             this.button4.TabIndex = 43;
-            this.button4.Text = "DUR";
+            this.button4.Text = "STOP";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // textBox2
@@ -231,7 +234,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(345, 22);
             this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "Manuel ayrılmayı onaylıyor musunuz?";
+            this.textBox2.Text = "Do You Confirm Manual Departure?\r\n";
             // 
             // groupBox4
             // 
@@ -239,14 +242,14 @@
             this.groupBox4.Controls.Add(this.txtOtoAyr);
             this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox4.Location = new System.Drawing.Point(221, 159);
+            this.groupBox4.Location = new System.Drawing.Point(173, 169);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Size = new System.Drawing.Size(453, 96);
             this.groupBox4.TabIndex = 43;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Otonom Ayrılma";
+            this.groupBox4.Text = "Autonomous Separation";
             // 
             // txtOtoAyr
             // 
@@ -263,7 +266,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(345, 22);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Otonom ayrılma durumu :";
+            this.textBox1.Text = "Autonomous Separation Status :";
             // 
             // srlPortGiden
             // 
@@ -277,7 +280,7 @@
             this.ıconPictureBox11.IconColor = System.Drawing.Color.Gold;
             this.ıconPictureBox11.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ıconPictureBox11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ıconPictureBox11.Location = new System.Drawing.Point(1269, 934);
+            this.ıconPictureBox11.Location = new System.Drawing.Point(1716, 1117);
             this.ıconPictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ıconPictureBox11.Name = "ıconPictureBox11";
             this.ıconPictureBox11.Size = new System.Drawing.Size(32, 33);
@@ -291,7 +294,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.label6.ForeColor = System.Drawing.Color.Yellow;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(1302, 939);
+            this.label6.Location = new System.Drawing.Point(1749, 1122);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 20);
             this.label6.TabIndex = 49;
@@ -314,7 +317,7 @@
             this.txtSbtPort2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSbtPort2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSbtPort2.HoverState.Parent = this.txtSbtPort2;
-            this.txtSbtPort2.Location = new System.Drawing.Point(1389, 932);
+            this.txtSbtPort2.Location = new System.Drawing.Point(1836, 1115);
             this.txtSbtPort2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSbtPort2.Name = "txtSbtPort2";
             this.txtSbtPort2.PasswordChar = '\0';
@@ -324,6 +327,34 @@
             this.txtSbtPort2.Size = new System.Drawing.Size(182, 36);
             this.txtSbtPort2.TabIndex = 48;
             // 
+            // guna2CirclePictureBox2
+            // 
+            this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
+            this.guna2CirclePictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(766, 169);
+            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(406, 377);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox2.TabIndex = 51;
+            this.guna2CirclePictureBox2.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Location = new System.Drawing.Point(907, 585);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(167, 51);
+            this.button3.TabIndex = 52;
+            this.button3.Text = "FIRE !";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -331,6 +362,8 @@
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.guna2CirclePictureBox2);
             this.Controls.Add(this.ıconPictureBox11);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSbtPort2);
@@ -341,7 +374,7 @@
             this.Controls.Add(this.groupBox4);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
-            this.Size = new System.Drawing.Size(1616, 1009);
+            this.Size = new System.Drawing.Size(2111, 1284);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -352,6 +385,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ıconPictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,5 +415,7 @@
         private FontAwesome.Sharp.IconPictureBox ıconPictureBox11;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox txtSbtPort2;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
+        private System.Windows.Forms.Button button3;
     }
 }

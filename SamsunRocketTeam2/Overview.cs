@@ -26,7 +26,7 @@ namespace SamsunSpaceSystems
 
             //Labellar ve textlere son veri yazılır
             var length = Program.globalLiveData.Count - 1;
-            txtRPM.Text = Program.globalLiveData[length].Manyetik_Alan.ToString();
+            txtRPM.Text = Program.globalLiveData[length].Yaw.ToString();
             txtGPS_Alt.Text = Program.globalLiveData[length].GPS_Alt.ToString();
             txtBsn.Text = Program.globalLiveData[length].Basinc.ToString();
             txtDns.Text = Program.globalLiveData[length].Donus_Sayisi.ToString();
@@ -47,9 +47,19 @@ namespace SamsunSpaceSystems
 
             //hız ve yükseklik grafikleri çizdirilir
             var tele = Program.globalLiveData[Program.globalLiveData.Count - 1];
-            this.chtHiz.Series["İniş Hızı m/s"].Points.AddXY(tele.Gonderme_Zamani.ToString(), tele.Inis_Hizi);
-            this.chtYks.Series["Yükseklik m"].Points.AddXY(tele.Gonderme_Zamani.ToString(), tele.Yukseklik);
+            this.chtHiz.Series["Speed m/s"].Points.AddXY(tele.Gonderme_Zamani.ToString(), tele.Inis_Hizi);
+            this.chtYks.Series["Height m"].Points.AddXY(tele.Gonderme_Zamani.ToString(), tele.Yukseklik);
 
+
+        }
+
+        private void Overview_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
