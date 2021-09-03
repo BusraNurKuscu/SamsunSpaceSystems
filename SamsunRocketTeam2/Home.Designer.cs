@@ -54,6 +54,7 @@
             this.txtSbtPort2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -116,6 +117,7 @@
             this.btnVdSec.TabIndex = 6;
             this.btnVdSec.Text = "Sellect Video";
             this.btnVdSec.UseVisualStyleBackColor = false;
+            this.btnVdSec.Click += new System.EventHandler(this.btnVdSec_Click);
             // 
             // txtVdKytKnt
             // 
@@ -179,6 +181,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Motor Off";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -190,6 +193,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Motor On";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox5
             // 
@@ -203,6 +207,7 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.groupBox5.Controls.Add(this.button5);
             this.groupBox5.Controls.Add(this.button4);
             this.groupBox5.Controls.Add(this.textBox2);
             this.groupBox5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -220,12 +225,13 @@
             this.button4.BackColor = System.Drawing.Color.SlateBlue;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(129, 76);
+            this.button4.Location = new System.Drawing.Point(232, 74);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(156, 39);
             this.button4.TabIndex = 43;
             this.button4.Text = "STOP";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox2
             // 
@@ -354,6 +360,20 @@
             this.button3.TabIndex = 52;
             this.button3.Text = "FIRE !";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.SlateBlue;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(43, 74);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(156, 39);
+            this.button5.TabIndex = 44;
+            this.button5.Text = "START";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Home
             // 
@@ -417,5 +437,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSbtPort2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
     }
 }

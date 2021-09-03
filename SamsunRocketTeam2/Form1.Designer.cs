@@ -713,7 +713,6 @@ namespace SamsunSpaceSystems
         private FontAwesome.Sharp.IconPictureBox ıconPictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.IO.Ports.SerialPort srlPortGelen;
         private System.Windows.Forms.Timer tmrRefresh;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtSbtPort;
@@ -737,6 +736,7 @@ namespace SamsunSpaceSystems
         private Overview overview1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        public System.IO.Ports.SerialPort srlPortGelen;
     }
 }
 

@@ -20,7 +20,7 @@ namespace SamsunSpaceSystems
         public float Inis_Hizi { get; set; }//5
         public float Sicaklik { get; set; }//6
         public float Pil_Gerilimi { get; set; }//7 
-       // public float Pil_Gerilimi2 { get; set; }//8
+                                               // public float Pil_Gerilimi2 { get; set; }//8
         public float GPS_Lat { get; set; }//9
         public float GPS_Long { get; set; }//10
         public float GPS_Alt { get; set; }//11

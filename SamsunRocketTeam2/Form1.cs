@@ -70,6 +70,7 @@ namespace SamsunSpaceSystems
             BtnOverview.BackColor = Color.Transparent;
             BtnMap.BackColor = Color.Transparent;
             BtnTelemetries.BackColor = Color.Transparent;
+            
 
         }
 
@@ -216,7 +217,7 @@ namespace SamsunSpaceSystems
                 {
                     Takim_No = int.Parse(pots[0]),
                     Paket_No = int.Parse(pots[1]),
-                    Gonderme_Zamani = DateTime.Now,//DateTime.Parse(pots[2]),
+                    Gonderme_Zamani = DateTime.Parse(pots[2]),//DateTime.Now,
                     Basinc = float.Parse(pots[3]) / 100.0f,
                     Yukseklik = float.Parse(pots[4]) / 100.0f,
                     Inis_Hizi = float.Parse(pots[5]) / 100.0f,
@@ -225,12 +226,12 @@ namespace SamsunSpaceSystems
                     GPS_Lat = float.Parse(pots[8]) / 100.0f,// 1000000.0f,
                     GPS_Long = float.Parse(pots[9]) / 100.0f,// 1000000.0f,
                     GPS_Alt = float.Parse(pots[10]) / 100.0f,
-                    Uydu_Statusu = Convert.ToString(pots[11]),
-                    Pitch = float.Parse(pots[12]) / 100f,
-                    Roll = float.Parse(pots[13]) / 100.0f,
-                    Yaw = float.Parse(pots[14]) / 100f,
-                    Donus_Sayisi = float.Parse(pots[15]) / 100.0f,
-                    Video_Aktarım_Bilgisi = Convert.ToString(pots[16])
+                    Uydu_Statusu = Convert.ToString(pots[8]),
+                    Pitch = float.Parse(pots[9]) / 100f,
+                    Roll = float.Parse(pots[10]) / 100.0f,
+                    Yaw = float.Parse(pots[11]) / 100f,
+                    Donus_Sayisi = float.Parse(pots[12]) / 100.0f,
+                    Video_Aktarım_Bilgisi = Convert.ToString(pots[13])
                    // Manyetik_Alan = float.Parse(pots[18]) / 100.0f,
                 };
 
@@ -256,7 +257,7 @@ namespace SamsunSpaceSystems
                         Inis_Hizi = 0,
                         Sicaklik = 0,
                         Pil_Gerilimi = 0,
-                        //Pil_Gerilimi2 = 0,
+                       // Pil_Gerilimi2 = 0,
                         GPS_Lat = 0,
                         GPS_Long = 0,
                         GPS_Alt = 0,
@@ -266,7 +267,7 @@ namespace SamsunSpaceSystems
                         Yaw = 0,
                         Donus_Sayisi = 0,
                         Video_Aktarım_Bilgisi = "Evet",
-                      //  Manyetik_Alan = 0,
+                        //Manyetik_Alan = 0,
                     };
 
                     Database.Add(tele);
